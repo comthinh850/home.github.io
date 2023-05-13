@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+<body>
+    <style>
+      
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #666;
+}
+
+            /* Style the header*/
+            header {
+                background-color: #000;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #666;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  align-self: auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:hover, a:active {
+    border: powder-blue;
+    color: #fff;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #502c2c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #666;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+   a {
+    font-size: 30px;
+  }
+
+        
+    </style>
+
+<header>
+    <p>E</p>
+</header>
+<aside>
+    <section>
+      <nav>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCar9sl4L30ZZgy7sy7ZEyHA">YouTube</a></li>
+            <li><a href="https://discord.gg/7yD6UEaVN6" <="" a="">Discord</a></li><a href="https://discord.gg/7yD6UEaVN6" <="" a="">
+            </a><li><a href="https://discord.gg/7yD6UEaVN6" <="" a=""></a><a href="https://github.com/nexus7-hub">Github</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="topnav responsive" id="myTopnav">
+        <a href="https://nexus7-hub.github.io/home.php" class="active">Home</a>
+        <a href="https://www.youtube.com/@notnexus7">YouTube</a>
+        <a href="https://discord.gg/7yD6UEaVN6">Discord</a>
+        <a href="https://github.com/nexus7-hub">Github</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <article>
+        <h1>Hello World!</h1>
+        <p style="font-size: 30px;">Hi</p>
+        <p>This website was made for a project <br> You will se a lot of changes!</p>
+        <a href="https://www.youtube.com/@notnexus7">Check out my YouTube</a>
+      </article>
+    </section>
+</aside>
+<div>
+    <footer>
+        <h2>Bye</h2>
+    </footer>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>  
+
+</body>
+</html>
